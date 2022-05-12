@@ -10,6 +10,7 @@ ruta_carpeta_ETFs()
 
 def union_datos_ETFs(path):
     archivos= [x for x in os.listdir() if re.search ('.txt', x)]
+    print(archivos)
     df= pd.DataFrame()
     for i in archivos:
         archivo= pd.read_csv(i)
